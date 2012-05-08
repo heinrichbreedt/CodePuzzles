@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0b7c32c3-c3b8-4ae9-9698-999deb0c41b7</ProjectGuid>
+    <ProjectGuid>{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FizzBuzz</RootNamespace>

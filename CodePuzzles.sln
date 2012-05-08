@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{2286DFD9-7FD4-4ED5-9FCE-A08C309479C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "src\FizzBuzz\FizzBuzz.csproj", "{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2286DFD9-7FD4-4ED5-9FCE-A08C309479C4}.Debug|x86.ActiveCfg = Debug|x86
-		{2286DFD9-7FD4-4ED5-9FCE-A08C309479C4}.Debug|x86.Build.0 = Debug|x86
-		{2286DFD9-7FD4-4ED5-9FCE-A08C309479C4}.Release|x86.ActiveCfg = Release|x86
-		{2286DFD9-7FD4-4ED5-9FCE-A08C309479C4}.Release|x86.Build.0 = Release|x86
+		{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}.Debug|x86.ActiveCfg = Debug|x86
+		{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}.Debug|x86.Build.0 = Debug|x86
+		{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}.Release|x86.ActiveCfg = Release|x86
+		{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
