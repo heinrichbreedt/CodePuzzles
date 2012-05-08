@@ -1,0 +1,31 @@
+time,logger,level,message,exception
+2012-05-09 03:57:33.4341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: ReducingExecuter, will wait for additional work",
+2012-05-09 03:57:35.3402,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: IndexingExecuter, will wait for additional work",
+2012-05-09 04:57:33.4451,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: ReducingExecuter, will wait for additional work",
+2012-05-09 04:57:35.3452,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: IndexingExecuter, will wait for additional work",
+2012-05-09 05:04:36.9628,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-05-09 05:04:36.9628,Raven.Database.Server.HttpServer,Debug,Request #  59: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-05-09 05:04:39.4719,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Raven/DocumentsByEntityName for: Tag:Games,
+2012-05-09 05:04:39.4719,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'games/33' was found,
+2012-05-09 05:04:39.4719,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'games/34' was found,
+2012-05-09 05:04:39.4719,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'games/35' was found,
+2012-05-09 05:04:39.4719,Raven.Database.Server.HttpServer,Debug,Request #  60: GET     -     9 ms - <default>  - 200 - /indexes/dynamic/Games?query=&start=0&pageSize=128&aggregation=None,
+2012-05-09 05:04:39.4789,Raven.Database.Server.HttpServer,Debug,"	Query: Tag:Games
+	Time: 8 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 3 returned out of 3 total.
+",
+2012-05-09 05:06:58.1184,Raven.Database.Server.HttpServer,Debug,Request #  61: GET     -     1 ms - <default>  - 304 - /indexes/dynamic/Games?query=&start=0&pageSize=128&aggregation=None,
+2012-05-09 05:06:58.1184,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+",
+2012-05-09 05:08:27.3910,Raven.Database.Server.HttpServer,Debug,Request #  62: GET     -     1 ms - <default>  - 304 - /indexes/dynamic/Games?query=&start=0&pageSize=128&aggregation=None,
+2012-05-09 05:08:27.3910,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-05-09 05:09:37.5744,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-05-09 05:09:37.5744,Raven.Database.Server.HttpServer,Debug,Request #  63: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-05-09 05:09:38.1284,Raven.Database.Server.HttpServer,Debug,Request #  64: GET     -     1 ms - <default>  - 304 - /indexes/dynamic/Games?query=&start=0&pageSize=128&aggregation=None,
+2012-05-09 05:09:38.1284,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+",

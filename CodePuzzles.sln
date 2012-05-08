@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "src\FizzBuzz\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketRegister", "src\SupermarketRegister\SupermarketRegister.csproj", "{3AB87C2A-DE9A-4B0C-8CE9-4784B4495706}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games", "src\Games\Games.csproj", "{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{3AB87C2A-DE9A-4B0C-8CE9-4784B4495706}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3AB87C2A-DE9A-4B0C-8CE9-4784B4495706}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{3AB87C2A-DE9A-4B0C-8CE9-4784B4495706}.Release|x86.ActiveCfg = Release|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

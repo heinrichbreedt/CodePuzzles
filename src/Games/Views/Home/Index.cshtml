@@ -1,0 +1,63 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table>
+   <thead>
+      <tr>
+         <th>Title</th>
+         <th>Description</th>
+         <th>Avg Stars</th>
+      </tr>
+   </thead>
+   <tbody data-bind="foreach: games">
+      <tr>
+         <td data-bind="text: Title"></td>
+         <td data-bind="text: Description"></td>
+         <td ></td>
+      </tr>
+   </tbody>
+</table>
+
+
+<script type="text/javascript">
+    $(function () {
+        $.getJSON("/Home/GetGames", function (data) {
+            domain.homepage.init(data);
+        });
+    });
+
+    var domain = domain || {};
+    domain.homepage = (function () {
+
+        var viewmodel;
+
+        function gameModel(data) {
+            var self = this;
+            self.Id = ko.observable(data.Id);
+            self.Title = ko.observable(data.Title);
+            self.Description = ko.observable(data.Description);
+            self.Votes = ko.observable(data.Votes);
+            self.Stars = ko.observable(data.Stars);
+        }
+
+        function games() {
+            var self = this;
+            self.games = ko.observableArray();
+            self.load = function (data) {
+                _.each(data, function (x) {
+                    self.games.push(new gameModel(x));
+                });
+            };
+        }
+
+        return {
+            init: function (jsondata) {
+                viewmodel = new games();
+                ko.applyBindings(viewmodel);
+                viewmodel.load(jsondata);
+            }
+        };
+    })();
+
+</script>
