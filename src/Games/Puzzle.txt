@@ -1,0 +1,26 @@
+﻿Xbox Game
+You have to build a game library to allow gamers to list and review games. You need to store the following information. 
+Games	
+Title	The title of the game
+Description	Description of the game
+Rating	The average rating based on votes from users (from 1-5 stars). 
+For example
+Title	Description	Rating
+Gears of War 3	Lorem ipsum dolor sit amet, consectetur adipiscing elit	     
+Step Up for Kinnect	Integer magna magna, iaculis euismod tincidunt a, cursus ac dolor. Aenean quis egestas diam. Pellentesque purus ipsum, elementum sit amet malesuada eget, aliquet eu magna. Nullam magna massa, sodales nec imperdiet quis, consectetur eget nisl. Aenean eget velit in eros porta dictum. Sed eu dui in augu	 
+Dead Island	Vivamus purus eros, aliquet malesuada gravida at, fringilla vel elit. Mauris vestibulum, erat at volutpat semper, metus enim faucibus nunc, in ultrices magna enim in justo	   
+Requirements
+1.	As a gamer I want to edit the descriptions so that everyone can see the latest game information.
+2.	As a gamer I want to vote for my favorite games. 
+3.	As a gamer I want to view games based on rating so that I can find the most popular ones. 
+Considerations
+•	For features that aren’t required, like creating a new game, you can do it programmatically.  
+•	You can use any technology
+o	WPF/Silverlight 
+o	Winforms
+o	ASP.NET/MVC
+o	SQL Server
+o	WCF
+o	Third Party Libraries like NHibernate, EntityFramework, MigratorDotNet
+o	Any other tool that you consider useful for this task. 
+•	UI/UX Design is a good bonus, but we’ll mainly review the code. 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using Raven.Client;
 
 namespace Games.Controllers
@@ -45,6 +46,26 @@ namespace Games.Controllers
          return Json(games, JsonRequestBehavior.AllowGet);
       }
 
+      [HttpPost]
+      public JsonResult SaveGames([FromJson] IEnumerable<Game> games)
+      {
+         foreach (var game in games)
+         {
+            var dbGame = RavenSession.Load<Game>(game.Id);
+            if(dbGame == null)
+            {
+               dbGame = new Game();
+               RavenSession.Store(dbGame);
+            }
+            dbGame.Title = game.Title;
+            dbGame.Description = game.Description;
+            dbGame.TotalStars = game.TotalStars;
+            dbGame.TotalVotes = game.TotalVotes;
+            RavenSession.SaveChanges();
+         }
+         return Json("Ok", JsonRequestBehavior.AllowGet);
+      }
+
       public ActionResult About()
       {
          RavenSession.Store(new Game
@@ -78,6 +99,27 @@ namespace Games.Controllers
          ViewBag.Message = "Your quintessential contact page.";
 
          return View();
+      }
+   }
+
+   public class FromJsonAttribute : CustomModelBinderAttribute
+   {
+      private readonly static JavaScriptSerializer Serializer = new JavaScriptSerializer();
+
+      public override IModelBinder GetBinder()
+      {
+         return new JsonModelBinder();
+      }
+
+      private class JsonModelBinder : IModelBinder
+      {
+         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+         {
+            var stringified = controllerContext.HttpContext.Request[bindingContext.ModelName];
+            if (string.IsNullOrEmpty(stringified))
+               return null;
+            return Serializer.Deserialize(stringified, bindingContext.ModelType);
+         }
       }
    }
 

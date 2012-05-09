@@ -2,23 +2,25 @@
     ViewBag.Title = "Home Page";
 }
 
-<table>
-   <thead>
-      <tr>
-         <th>Title</th>
-         <th>Description</th>
-         <th>Avg Stars</th>
-      </tr>
-   </thead>
-   <tbody data-bind="foreach: games">
-      <tr>
-         <td data-bind="text: Title"></td>
-         <td data-bind="text: Description"></td>
-         <td ></td>
-      </tr>
-   </tbody>
-</table>
-
+<form data-bind="submit: saveGames">
+   <table>
+      <thead>
+         <tr>
+            <th style="width: 200px">Title</th>
+            <th style="width: 450px">Description</th>
+            <th style="width: 100px">Avg Stars</th>
+         </tr>
+      </thead>
+      <tbody data-bind="foreach: games">
+         <tr>
+            <td data-bind="text: Title" style="vertical-align: top"></td>
+            <td ><textarea data-bind='value: Description' rows='5' cols='60'> </textarea></td>
+            <td data-bind="text: AvgStars" style="text-align: center"></td>
+         </tr>
+      </tbody>
+   </table>
+   <button type="submit">Save</button>
+</form>
 
 <script type="text/javascript">
     $(function () {
@@ -32,13 +34,16 @@
 
         var viewmodel;
 
-        function gameModel(data) {
+        function Game(data) {
             var self = this;
             self.Id = ko.observable(data.Id);
             self.Title = ko.observable(data.Title);
             self.Description = ko.observable(data.Description);
-            self.Votes = ko.observable(data.Votes);
-            self.Stars = ko.observable(data.Stars);
+            self.Votes = ko.observable(data.TotalVotes);
+            self.Stars = ko.observable(data.TotalStars);
+            self.AvgStars = ko.computed(function () {
+                return Math.floor(self.Stars() / self.Votes());
+            });
         }
 
         function games() {
@@ -46,7 +51,14 @@
             self.games = ko.observableArray();
             self.load = function (data) {
                 _.each(data, function (x) {
-                    self.games.push(new gameModel(x));
+                    self.games.push(new Game(x));
+                });
+            };
+
+            self.saveGames = function () {
+                var xx = ko.toJSON(self.games());
+                $.post("/Home/SaveGames", { games: ko.toJSON(self.games()) }, function (returnedData) {
+                    alert('Saved');
                 });
             };
         }
