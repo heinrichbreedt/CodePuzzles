@@ -9,20 +9,19 @@ namespace FizzBuzz
       {
          for (var i = 0; i <= 100; i++)
          {
-            Console.WriteLine(fizzbuzzed(i));
+            Console.WriteLine(Fizzbuzzed(i));
          }
          Console.ReadLine();
       }
 
-      static string fizzbuzzed(int number)
+      static string Fizzbuzzed(int number)
       {
-         if (number%15 == 0)
-            return "FizzBuzz";
-         if (number%3 == 0)
-            return "Fizz";
-         if (number%5 == 0)
-            return "Buzz";
-         return number.ToString(CultureInfo.InvariantCulture);
+         var result = "";
+
+         if (number % 3 == 0) result = "Fizz";
+         if (number % 5 == 0) result += "Buzz";
+         if (result == "") result = number.ToString(CultureInfo.InvariantCulture);
+         return result;
       }
    }
 }
