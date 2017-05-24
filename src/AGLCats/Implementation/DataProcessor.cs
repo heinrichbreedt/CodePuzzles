@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AGLCats.Tests;
 
-namespace AGLCats.Tests
+namespace AGLCats.Implementation
 {
     public class DataProcessor
     {

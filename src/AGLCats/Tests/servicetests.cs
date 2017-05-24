@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using System.Threading.Tasks;
+using AGLCats.Implementation;
 using NUnit.Framework;
 using Shouldly;
 
@@ -37,26 +34,6 @@ namespace AGLCats.Tests
             catsByGender[1].CatNames[1].ShouldBe("Jim");
             catsByGender[1].CatNames[2].ShouldBe("Max");
             catsByGender[1].CatNames[3].ShouldBe("Tom");
-        }
-    }
-
-    public class ActualPeopleService : IPeopleService
-    {
-        HttpClient httpClient;
-
-        public ActualPeopleService()
-        {
-            httpClient = new HttpClient
-            {
-                BaseAddress = new Uri("http://agl-developer-test.azurewebsites.net")
-            };
-        }
-
-        public async Task<IEnumerable<Person>> Get()
-        {
-            var response = await httpClient.GetAsync("people.json").ConfigureAwait(false);
-            var jsonString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-            return JsonConvert.DeserializeObject<List<Person>>(jsonString);
         }
     }
 }

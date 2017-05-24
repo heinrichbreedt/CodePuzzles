@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AGLCats.Implementation;
 using NSubstitute;
 using NUnit.Framework;
 using Shouldly;

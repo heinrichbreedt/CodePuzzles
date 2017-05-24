@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AGLCats.Tests
+namespace AGLCats.Implementation
 {
     public class OwnerGenderAndCats
     {

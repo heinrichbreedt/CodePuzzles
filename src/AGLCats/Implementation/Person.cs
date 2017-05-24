@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using AGLCats.Tests;
 
-namespace AGLCats.Tests
+namespace AGLCats.Implementation
 {
     public class Person
     {

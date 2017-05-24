@@ -1,4 +1,4 @@
-namespace AGLCats.Tests
+namespace AGLCats.Implementation
 {
     public class Pet
     {
