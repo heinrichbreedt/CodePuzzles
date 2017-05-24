@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "src\FizzBuzz\FizzBuzz.csproj", "{AA4C952B-9FD3-47D2-A996-731E4AF7BEA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketRegister", "src\SupermarketRegister\SupermarketRegister.csproj", "{3AB87C2A-DE9A-4B0C-8CE9-4784B4495706}"
@@ -8,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games", "src\Games\Games.csproj", "{3712AEC0-5AE3-48A6-8D40-A2B675B572AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToEnglish", "src\NumberToEnglish\NumberToEnglish.csproj", "{11C593EF-5AAC-4879-A092-1FEA0FE366BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGLCats", "src\AGLCats\AGLCats.csproj", "{28E3F598-1E97-4B49-93DF-4C73B76C9974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,18 @@ Global
 		{11C593EF-5AAC-4879-A092-1FEA0FE366BD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{11C593EF-5AAC-4879-A092-1FEA0FE366BD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{11C593EF-5AAC-4879-A092-1FEA0FE366BD}.Release|x86.ActiveCfg = Release|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Debug|x86.Build.0 = Debug|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Release|x86.ActiveCfg = Release|Any CPU
+		{28E3F598-1E97-4B49-93DF-4C73B76C9974}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

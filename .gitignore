@@ -13,3 +13,5 @@ src/*/bin/
 src/*/*.user
 *.user
 src/*/*.DotSettings
+/packages
+/.vs
